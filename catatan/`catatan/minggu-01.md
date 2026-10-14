@@ -29,8 +29,8 @@ Skrip `uji.ps1` ditolak Windows karena Execution Policy PowerShell. Saya mengata
 - Bagian yang dibantu AI: menjelaskan apasaja yang harus di kerjakan, kelas, dan `uji.ps1` karena error di tolak oleh windows.
 - Prompt utama:
   - jelaskan aku harus mengisi dan mengerjakan apasaja.
-  - Saya menempelkan pesan error PowerShell dan hasil `mvn test`, lalu menanyakan penyebabnya.
+  - Saya menempelkan pesan error PowerShell dan hasil `mvn test`, lalu menanyakan penyebabnya .
 - Yang saya ubah atau tolak dari saran AI, dan alasannya:
-  - Saya mengubah bagian script terminal karena error, makannya saya menggunakan ai. sisanya saya terima semua.
+  - Saya mengubah bagian script terminal karena error, makannya saya menggunakan ai. sisanya saya terima semua. 
 - Satu hal yang saya pahami lebih baik sekarang:
   - Saya jadi lebih memahami tentang java yang sebelumnya saya belum memahaminya.
