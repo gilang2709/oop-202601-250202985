@@ -62,7 +62,7 @@ public class Aset implements DapatDipinjam {
     }
 
     /** Pemeriksa bersama: teks tidak boleh null atau kosong. */
-    private static String wajibIsi(String nilai, String namaField) {
+    protected static String wajibIsi(String nilai, String namaField) {
         if (nilai == null || nilai.isBlank()) {
             throw new IllegalArgumentException(namaField + " tidak boleh kosong");
         }

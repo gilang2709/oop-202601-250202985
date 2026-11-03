@@ -3,19 +3,31 @@ package id.ac.upb.asetpinjam.model;
 /** Minggu 3: alat laboratorium. Laboratorium tidak boleh kosong; risiko tidak boleh null. */
 public class AlatLab extends Aset {
 
+    private final String laboratorium;
+    private final TingkatRisiko tingkatRisiko;
+
     // TODO minggu 3: field laboratorium dan tingkatRisiko.
 
     public AlatLab(String kode, String nama, String laboratorium, TingkatRisiko tingkatRisiko) {
         super(kode, nama);
-        throw new UnsupportedOperationException("TODO minggu 3: konstruktor AlatLab");
+        this.laboratorium = wajibIsi(laboratorium, "laboratorium");
+        if (tingkatRisiko == null) {
+            throw new IllegalArgumentException("tingkat risiko tidak boleh null");
+        }
+        this.tingkatRisiko = tingkatRisiko;
     }
 
     public String getLaboratorium() {
-        throw new UnsupportedOperationException("TODO minggu 3");
+        return laboratorium;
     }
 
     public TingkatRisiko getTingkatRisiko() {
-        throw new UnsupportedOperationException("TODO minggu 3");
+        return tingkatRisiko;
+    }
+
+    @Override
+    public JenisAset getJenis() {
+        return JenisAset.ALAT_LAB;
     }
 
     // TODO minggu 3: override getJenis(). Minggu 4: override hitungDenda(int).
